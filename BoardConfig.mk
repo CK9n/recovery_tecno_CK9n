@@ -186,3 +186,6 @@ TARGET_USES_LOGD := true
 # StatusBar
 TW_STATUS_ICONS_ALIGN := center
 TW_CUSTOM_CLOCK_POS := "300"
+
+# Version
+TW_DEVICE_VERSION := CK9n-DennisMurimi
