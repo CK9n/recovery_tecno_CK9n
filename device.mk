@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/tecno/CK9n
+LOCAL_PATH := device/infinix/X6739
 
 # Virtual A/B
 ENABLE_VIRTUAL_AB := true
@@ -43,7 +43,8 @@ PRODUCT_PACKAGES += \
     cppreopts.sh \
     update_engine \
     update_verifier \
-    update_engine_sideload
+    update_engine_sideload \
+    checkpoint_gc
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 31

@@ -521,7 +521,7 @@
           "Params":
           {
             "Controller": "cpuset",
-            "Path": "anibooster"
+            "Path": "system-background"
           }
         }
       ]
@@ -539,7 +539,6 @@
         }
       ]
     },
-
     {
       "Name": "animBoostPolicy",
       "Actions": [
@@ -549,6 +548,19 @@
           {
             "Controller": "cpuset",
             "Path": "anibooster"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "InputMainPolicy",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "input_dispatch"
           }
         }
       ]
@@ -694,6 +706,10 @@
     {
       "Name": "CPUSET_SP_ANIMBOOST",
       "Profiles": [ "animBoostPolicy", "TimerSlackNormal" ]
+    },
+    {
+      "Name": "CPUSET_SP_INPUT_DISPATCH_BOOST",
+      "Profiles": [ "InputMainPolicy", "TimerSlackNormal" ]
     },
     {
       "Name": "Dex2OatBootComplete",

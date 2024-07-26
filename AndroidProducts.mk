@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_CK9n.mk
+    $(LOCAL_DIR)/twrp_X6739.mk

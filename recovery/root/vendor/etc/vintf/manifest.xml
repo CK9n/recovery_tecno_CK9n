@@ -5,7 +5,6 @@
         manifest_apuware_utils.xml
         manifest_apuware_hmp.xml
         manifest_fingerprint.xml
-        vendor.transsion.hardware.security.hap_device.xml
         manifest_tranlog.xml
         manifest_tranlogconfig.xml
         manifest_trandatacenter.xml
@@ -173,16 +172,6 @@
         </interface>
         <fqname>@1.0::IOmx/default</fqname>
         <fqname>@1.0::IOmxStore/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.memtrack</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMemtrack</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.nfc</name>
@@ -615,16 +604,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IVideoTelephony/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.transsion.hardware.security.hap</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IHap</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IHap/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.transsion.hardware.trandatacenter</name>

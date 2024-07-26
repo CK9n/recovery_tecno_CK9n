@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-FDEVICE="CK9n"
+FDEVICE="X6739"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
@@ -39,7 +39,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_LOOP_DEVICE_ERRORS_TO_LOG=1
 	export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
-	export OF_QUICK_BACKUP_LIST="/boot;/data;"
+	export OF_QUICK_BACKUP_LIST="/boot;/vendor_boot;/data;"
 	export OF_RUN_POST_FORMAT_PROCESS=1
 	export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
 	export OF_UNBIND_SDCARD_F2FS=1
@@ -50,13 +50,15 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1616300800"; # Sun 21 Mar 04:26:40 GMT 2021
 	export FOX_DELETE_AROMAFM=1
 	export FOX_ENABLE_APP_MANAGER=0
-	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/by-name/boot"
+	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/by-name/vendor_boot"
 	export FOX_USE_BASH_SHELL=1
 	export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
+	export FOX_USE_GREP_BINARY=1
 	export FOX_USE_NANO_EDITOR=1
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_TAR_BINARY=1
 	export FOX_USE_XZ_UTILS=1
+	export FOX_USE_ZIP_BINARY=1
 	export FOX_VIRTUAL_AB_DEVICE=1
    	export TW_DEFAULT_LANGUAGE="en"
 
@@ -68,7 +70,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_CLOCK_POS=1
 
 	export FOX_VERSION="R12.1_0"
-	export FOX_VARIANT="A13+"
+	export FOX_VARIANT="A14+"
 	export OF_MAINTAINER="DennisMurimi"
 
 	# let's see what are our build VARs

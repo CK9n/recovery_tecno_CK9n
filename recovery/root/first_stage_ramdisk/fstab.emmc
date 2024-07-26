@@ -34,13 +34,9 @@ product /product erofs ro wait,slotselect,avb,logical,first_stage_mount
 
 
 
-/devices/platform/externdevice* auto auto defaults voldmanaged=sdcard1:auto,encryptable=userdata
 
 
-
-
-
-
+/devices/platform/soc/11240000.mmc* auto auto defaults voldmanaged=sdcard1:auto,encryptable=userdata
 
 /devices/platform/usb_xhci* auto vfat defaults voldmanaged=usbotg:auto
 /devices/platform/usb0/11200000.xhci* auto vfat defaults voldmanaged=usbotg:auto
