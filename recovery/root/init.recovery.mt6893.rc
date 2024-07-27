@@ -1,4 +1,5 @@
 import /init.recovery.trustonic.rc
+import /init.vibrator.rc
 
 on init
     setprop sys.usb.configfs 1
