@@ -46,6 +46,11 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     checkpoint_gc
 
+PRODUCT_PACKAGES += \
+    linker.vendor_ramdisk \
+    tune2fs.vendor_ramdisk \
+    resize2fs.vendor_ramdisk
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 31
 
