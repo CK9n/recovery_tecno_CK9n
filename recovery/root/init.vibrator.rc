@@ -1,5 +1,5 @@
 on boot
-    write /sys/class/leds/vibrator/trigger "transient"
+    write /sys/class/leds/vibrator_single/trigger "transient"
     start vendor.vibrator-default
 
 service vendor.vibrator-default /vendor/bin/hw/android.hardware.vibrator-service.mediatek
